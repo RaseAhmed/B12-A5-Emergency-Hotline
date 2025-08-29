@@ -13,9 +13,9 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
 ---
-1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
+ What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-1. **Answer**
+ **Answer**
 getElementById("id") pass A single element when you set a perameter id only and return a single element only 
 
 getElementsByClassName("class") return HTML Collection set a class name in any element that call for you all element 
@@ -24,17 +24,17 @@ querySelector("selector") this is a css selector only return First matching elem
 
 querySelectorAll("selector") this is a css selector that return NodeList Returns all matching elements
 
-2. How do you **create and insert a new element into the DOM**?
+ How do you **create and insert a new element into the DOM**?
 
-2. **Answer**
+ **Answer**
 
 const newDiv = document.createElement("div");
 newDiv.innerText = "create a div";
 document.body.appendChild(newDiv);
 
-3. What is **Event Bubbling** and how does it work?
+ What is **Event Bubbling** and how does it work?
 
-3. **Answer**
+ **Answer**
 
 event bubbling  is a process an event triggered on a child elements bubbles up propagates its parent up to the root 
 
@@ -42,9 +42,9 @@ event bubbling  is a process an event triggered on a child elements bubbles up p
   <button id="child">Click</button>
 </div>
 
-4. What is **Event Delegation** in JavaScript? Why is it useful?
+ What is **Event Delegation** in JavaScript? Why is it useful?
 
-4. **Answer**
+ **Answer**
 
 Event Delegation means adding a single event listener to a parent element and  handleing  events . its children using event.target.
 
@@ -53,10 +53,11 @@ Event Delegation means adding a single event listener to a parent element and  h
 2. cleaner code 
 3. Works well with bubbling
 
-5. What is the difference between **preventDefault() and stopPropagation()** methods?
+ What is the difference between **preventDefault() and stopPropagation()** methods?
 
-5. **Answer**
+ **Answer**
 
 preventDefault()  Prevents the default browser behavior of an element like any one set prevent on her program on this time  one submite form or click any link it don't work preventDefault() are block event
+
 
 stopPropagation() stop event from bubbling up to parent any one use this methode If you want the parent element not to respond when the child element is clicked.
